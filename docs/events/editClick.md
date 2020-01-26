@@ -5,9 +5,9 @@ parent: Events
 nav_order: 2
 ---
 
-Ng Smart Datatable has some output events and one of these is btnEditClickEvent.
+> Ng Smart Datatable has some output events and one of these is btnEditClickEvent.
 
-btnEditClickEvent is emit item when ActionType.Edit clicked.
+btnEditClickEvent is emit item when [ActionType]({{ site.baseurl }}{% link docs/types/action-type.md %}).Edit clicked.
 
 This event can be listened like that
 

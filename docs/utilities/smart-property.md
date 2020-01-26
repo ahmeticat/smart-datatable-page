@@ -22,7 +22,6 @@ export class SmartProperty {
 }
 ```
 
-
 | Property  | Explanation                          |
 |:----------|:-------------------------------------|
 | `key`    | Key of one property of data  |
@@ -31,4 +30,28 @@ export class SmartProperty {
 | `inlineSearch`      |  Has column inlineSearchable (**default**: _false_)               |
 | `visible`      | Is visible column (**default**:_true_)                |
 | `width`      | Width of column              |
-| `type`      | Datatype of propert (**default**:_Text_)              |
+| `type`      | [SmartDataTypes]({{ site.baseurl }}{% link docs/types/data-type.md %}) (**default**:_Text_)              |
+
+---
+
+> Example SmartProperty
+
+```javascript
+
+colDef = (item, key) => {
+    return `<div class="name-cell-column"><a href="${item[`${key}`]}">${item[`${key}`]}</a></div>`;
+  }
+
+model: SmartModel = {
+    properties: [
+      {
+        title: 'NAME',
+        key: 'Name',
+        inlineSearch: true,
+        smartHtml: this.colDef,
+        width: '300px'
+      }
+      ...
+    ]
+};
+```
