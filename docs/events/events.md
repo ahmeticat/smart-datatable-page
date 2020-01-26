@@ -7,6 +7,7 @@ permalink: /docs/events
 ---
 
 # Events
+{: .no_toc }
 
 Ng Smart Datatable components has some events which are [btnAddClickEvent]({{ site.baseurl }}{% link docs/events/addClick.md %})
 ,[btnEditClickEvent]({{ site.baseurl }}{% link docs/events/editClick.md %}),[btnDeleteClickEvent]({{ site.baseurl }}{% link docs/events/deleteClick.md %}).
