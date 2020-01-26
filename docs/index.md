@@ -6,7 +6,7 @@ description: "Simple table extension with sorting, filtering, exporting ... for 
 permalink: /
 ---
 
-# ngx-table
+# ng-smart-datatable
 {: .fs-9 }
 
 Simple table extension with sorting, filtering, exporting ... for Angular apps.
@@ -33,7 +33,7 @@ Smart datatable is an library for [Angular](https://angular.io). View the [quick
 
 1. Import NgSmartDatatableModule in your module
 ```javascript
-import { Ng2TableModule } from 'ng2-table/ng2-table';
+import { NgSmartDatatableModule } from 'ng-smart-datatable';
 ```
 ```javascript
 @NgModule({
