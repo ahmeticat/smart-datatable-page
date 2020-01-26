@@ -17,7 +17,6 @@ This event can be listened like that
 
 on .ts file
 
-
 ```javascript
 btnEditClick(item: any) {
     console.log(`Edit Click : ${JSON.stringify(item)}`);

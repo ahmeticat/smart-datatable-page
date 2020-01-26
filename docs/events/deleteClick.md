@@ -17,7 +17,6 @@ This event can be listened like that
 
 on .ts file
 
-
 ```javascript
 btnDeleteClick(item: any) {
     console.log(`Delete Click : ${JSON.stringify(item)}`);

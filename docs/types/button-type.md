@@ -5,7 +5,7 @@ parent: Types
 nav_order: 2
 ---
 
-# Smart ButtonType
+## Smart ButtonType
 
 SmartButtonType is an enum which is describes type of button.
 

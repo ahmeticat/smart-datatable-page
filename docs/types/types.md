@@ -6,8 +6,7 @@ has_children: true
 permalink: /docs/types
 ---
 
-# Utilities
-{: .no_toc }
+## Types
 
 **Ng Smart Datatable** has some types, these are helped object oriented structure.
 {: .fs-6 .fw-300 }

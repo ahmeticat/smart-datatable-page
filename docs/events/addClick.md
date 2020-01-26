@@ -17,7 +17,6 @@ This event can be listened like that
 
 on .ts file
 
-
 ```javascript
 btnAddClick() {
     console.log('BtnAdd Clicked');

@@ -5,7 +5,7 @@ parent: Utilities
 nav_order: 1
 ---
 
-# Smart Property
+## Smart Property
 
 Smart Property is an model and has some property.
 

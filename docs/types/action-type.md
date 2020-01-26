@@ -5,7 +5,7 @@ parent: Types
 nav_order: 3
 ---
 
-# ActionType
+## ActionType
 
 ActionType is an enum which is describes type of action .
 

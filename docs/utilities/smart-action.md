@@ -5,7 +5,7 @@ parent: Utilities
 nav_order: 2
 ---
 
-# Smart Action
+## Smart Action
 
 Smart Action is an model and has some property.
 

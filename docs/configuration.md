@@ -4,14 +4,12 @@ title: Configuration
 nav_order: 2
 ---
 
-# Configuration
-{: .no_toc }
-
+## Configuration
 
 **Ng Smart Datatable** has some specific configuration parameters that can be defined in model is implemented from SmartModel.
 {: .fs-6 .fw-300 }
 
-## Table of contents
+### Table of contents
 
 1. [Properties](#properties)
 2. [Actions](#actions)
@@ -29,7 +27,7 @@ nav_order: 2
 
 ---
 
-## Properties
+### Properties
 
 Smart Model has a property which is properties implemented from [SmartProperty]({{ site.baseurl }}{% link docs/utilities/smart-property.md %})
 
@@ -37,7 +35,7 @@ Smart Model has a property which is properties implemented from [SmartProperty](
 properties: SmartProperty[]
 ```
 
-## Actions
+### Actions
 
 Smart Model has a property which is actions implemented from [SmartAction]({{ site.baseurl }}{% link docs/utilities/smart-action.md %})
 
@@ -45,7 +43,7 @@ Smart Model has a property which is actions implemented from [SmartAction]({{ si
 actions: SmartAction[]
 ```
 
-## Buttons
+### Buttons
 
 Smart Model has a property which is buttons implemented from [SmartButton]({{ site.baseurl }}{% link docs/utilities/smart-button.md %})
 
@@ -53,7 +51,7 @@ Smart Model has a property which is buttons implemented from [SmartButton]({{ si
 buttons: SmartButton[]
 ```
 
-## Language
+### Language
 
 Smart Model has a property which is language implemented from [SmartLanguage]({{ site.baseurl }}{% link docs/utilities/smart-language.md %})
 

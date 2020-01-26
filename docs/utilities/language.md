@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 
-# Smart Language
+## Smart Language
 
 Smart Language is an model and has some property.
 

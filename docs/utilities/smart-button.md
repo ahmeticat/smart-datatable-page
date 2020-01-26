@@ -5,7 +5,7 @@ parent: Utilities
 nav_order: 3
 ---
 
-# Smart Button
+## Smart Button
 
 Smart Button is an model and has some property.
 
