@@ -3,7 +3,7 @@ layout: default
 title: Events
 nav_order: 4
 has_children: true
-permalink: /docs/events
+permalink: docs/events
 ---
 
 ## Events
