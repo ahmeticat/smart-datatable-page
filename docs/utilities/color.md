@@ -2,7 +2,7 @@
 layout: default
 title: Color
 parent: Utilities
-nav_order: 3
+nav_order: 43
 ---
 
 # Color Utilities

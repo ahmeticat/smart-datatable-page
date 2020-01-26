@@ -1,0 +1,34 @@
+---
+layout: default
+title: Smart Property
+parent: Utilities
+nav_order: 1
+---
+
+# Smart Property
+
+Smart Property is an model and has some property.
+
+```javascript
+export class SmartProperty {
+    key: string;
+    title: string;
+    smartHtml?: (item, key) => string;
+    inlineSearch ?= false;
+    searchable ?= true;
+    visible ?= true;
+    width?: string;
+    type?: SmartDataTypes = SmartDataTypes.Text;
+}
+```
+
+
+| Property  | Explanation                          |
+|:----------|:-------------------------------------|
+| `key`    | Key of one property of data  |
+| `title`      | Title of one of column Ng Smart Table                  |
+| `smartHtml`      | Column definition of property              |
+| `inlineSearch`      |  Has column inlineSearchable (**default**: _false_)               |
+| `visible`      | Is visible column (**default**:_true_)                |
+| `width`      | Width of column              |
+| `type`      | Datatype of propert (**default**:_Text_)              |
