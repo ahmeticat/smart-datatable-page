@@ -1,68 +1,129 @@
-<p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/pmarsceill/just-the-docs/actions"><img src="https://github.com/pmarsceill/just-the-docs/workflows/CI/badge.svg" alt="Build status"></a>
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://pmarsceill.github.io/just-the-docs/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
 
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
+# ng-smart-table
 
-## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Simple table extension with sorting, filtering, exporting ... for Angular apps.
 
-```ruby
-gem "just-the-docs"
+
+[Get started now](#getting-started)
+
+---
+
+## Getting started
+
+### Dependencies
+
+Smart datatable is an library for [Angular](https://angular.io). View the [quick start guide](https://github.com/ahmeticat/smart-datatable-page) for more information. Smart datatable requires no special plugins and can run on [Angular](https://angular.io). 
+
+### Quick start
+
+1. A recommended way to install **ng-smart-datatable** is through npm package manager using the following command:
+```bash
+ npm i ng-smart-datatable --save
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+### Usage
 
-```yaml
-theme: just-the-docs
+1. Import NgSmartDatatableModule in your module
+```javascript
+import { NgSmartDatatableModule } from 'ng-smart-datatable';
+```
+```javascript
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    NgSmartDatatableModule
+  ],
+})
+export class YourModule { }
+```
+2. Use **ng-smart-datatable** in your component
+```html
+<ng-smart-datatable [data]="data" [model]="model">
+</ng-smart-datatable>
+```
+3. _Example:_ Initialize data
+```javascript
+data = [
+    {
+      Name: 'Airi',
+      Surname: 'Satou',
+      Position: 'Accountant',
+      Office: 'Tokyo',
+      Age: '33'
+    },
+    {
+      Name: 'Angelica',
+      Surname: 'Ramos',
+      Position: 'Chief Executive Officer (CEO)',
+      Office: 'London',
+      Age: '47'
+    },
+    {
+      Name: 'Ashton',
+      Surname: 'Cox',
+      Position: 'Junior Technical Author',
+      Office: 'San Francisco',
+      Age: '66'
+    },
+    {
+      Name: 'Bradley',
+      Surname: 'Greer',
+      Position: 'Software Engineer',
+      Office: 'London',
+      Age: '41'
+    },
+    {
+      Name: 'Brenden',
+      Surname: 'Wagner',
+      Position: 'Software Engineer',
+      Office: 'San Francisco',
+      Age: '28'
+    }
+];
+```
+and model
+```javascript
+model: SmartModel = {
+    properties: [
+      {
+        title: 'NAME',
+        key: 'Name',
+        width: '300px'
+      },
+      {
+        title: 'SURNAME',
+        key: 'Surname',
+        width: '30%'
+      },
+      {
+        title: 'POSITION',
+        key: 'Position',
+        width: '30%'
+      }
+    ]
+};
 ```
 
-And then execute:
+### Configure Just the Docs
 
-    $ bundle
+- [See configuration options](https://ahmeticat.github.io/smart-datatable-page)
 
-Or install it yourself as:
+---
 
-    $ gem install just-the-docs
+## About the project
 
-## Usage
+Smart Datatable is &copy; 2020 by [Ahmet ICAT](http://github.com/ahmeticat).
 
-[View the documentation](https://pmarsceill.github.io/just-the-docs/) for usage information.
+### License
 
-## Contributing
+Smart Datatable is distributed by an [MIT license](https://github.com/ahmeticat/smart-datatable/blob/master/LICENSE.txt).
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+### Contributing
 
-### Submitting code changes:
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/ahmeticat/smart-datatable).
 
-- Open a [Pull Request](https://github.com/pmarsceill/just-the-docs/pulls)
-- Ensure all CI tests pass
-- Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
-
-### Design and development principles of this theme:
-
-1. As few dependencies as possible
-2. No build script needed
-3. First class mobile experience
-4. Make the content shine
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When the theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
