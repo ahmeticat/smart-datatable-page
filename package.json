@@ -1,10 +1,10 @@
 {
-  "name": "just-the-docs",
+  "name": "smart-datatable-page",
   "version": "0.2.7",
-  "description": "A modern Jekyll theme for documentation",
-  "repository": "pmarsceill/just-the-docs",
+  "description": "Simple table extension with sorting, filtering, exporting ... for Angular apps",
+  "repository": "ahmeticat/smart-datatable",
   "license": "MIT",
-  "bugs": "https://github.com/pmarsceill/just-the-docs/issues",
+  "bugs": "https://github.com/ahmeticat/smart-datatable/issues",
   "devDependencies": {
     "stylelint": "^10.0.1",
     "stylelint-config-primer": "^8.0.0",
