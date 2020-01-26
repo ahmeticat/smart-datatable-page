@@ -6,13 +6,13 @@ description: "Simple table extension with sorting, filtering, exporting ... for 
 permalink: /
 ---
 
-# Focus on writing good documentation
+# ngx-table
 {: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+Simple table extension with sorting, filtering, exporting ... for Angular apps.
 {: .fs-6 .fw-300 }
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/pmarsceill/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/ahmeticat/smart-datatable){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -20,45 +20,100 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 
 ### Dependencies
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+Smart datatable is an library for [Angular](https://angular.io). View the [quick start guide](https://github.com/ahmeticat/smart-datatable-page) for more information. Smart datatable requires no special plugins and can run on [Angular](https://angular.io). 
 
-### Quick start: Use as a GitHub Pages remote theme
+### Quick start
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-```yaml
-remote_theme: pmarsceill/just-the-docs
-```
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
-
-### Local installation: Use the gem-based theme
-
-1. Install the Ruby Gem
+1. A recommended way to install **ng-smart-datatable** is through npm package manager using the following command:
 ```bash
-$ gem install just-the-docs
+ npm i ng-smart-datatable --save
 ```
-```yaml
-# .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
-```
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-```yaml
-theme: "just-the-docs"
-```
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-```bash
-$ bundle exec just-the-docs rake search:init
-```
-3. Run you local Jekyll server
-```bash
-$ jekyll serve
-```
-```bash
-# .. or if you're using a Gemfile (bundler)
-$ bundle exec jekyll serve
-```
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
 
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+### Usage
+
+1. Import NgSmartDatatableModule in your module
+```javascript
+import { Ng2TableModule } from 'ng2-table/ng2-table';
+```
+```javascript
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    NgSmartDatatableModule
+  ],
+})
+export class YourModule { }
+```
+2. Use **ng-smart-datatable** in your component
+```html
+<ng-smart-datatable [data]="data" [model]="model">
+</ng-smart-datatable>
+```
+3. _Example:_ Initialize data
+```bash
+data = [
+    {
+      Name: 'Airi',
+      Surname: 'Satou',
+      Position: 'Accountant',
+      Office: 'Tokyo',
+      Age: '33'
+    },
+    {
+      Name: 'Angelica',
+      Surname: 'Ramos',
+      Position: 'Chief Executive Officer (CEO)',
+      Office: 'London',
+      Age: '47'
+    },
+    {
+      Name: 'Ashton',
+      Surname: 'Cox',
+      Position: 'Junior Technical Author',
+      Office: 'San Francisco',
+      Age: '66'
+    },
+    {
+      Name: 'Bradley',
+      Surname: 'Greer',
+      Position: 'Software Engineer',
+      Office: 'London',
+      Age: '41'
+    },
+    {
+      Name: 'Brenden',
+      Surname: 'Wagner',
+      Position: 'Software Engineer',
+      Office: 'San Francisco',
+      Age: '28'
+    }
+];
+```
+and model
+```javascript
+model: SmartModel = {
+    properties: [
+      {
+        title: 'NAME',
+        key: 'Name',
+        width: '300px'
+      },
+      {
+        title: 'SURNAME',
+        key: 'Surname',
+        width: '30%'
+      },
+      {
+        title: 'POSITION',
+        key: 'Position',
+        width: '30%'
+      }
+    ]
+};
+```
 
 ### Configure Just the Docs
 
@@ -68,11 +123,11 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ## About the project
 
-Just the Docs is &copy; 2017-2019 by [Patrick Marsceill](http://patrickmarsceill.com).
+Smart Datatable is &copy; 2020 by [Ahmet ICAT](http://github.com/ahmeticat).
 
 ### License
 
-Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+Smart Datatable is distributed by an [MIT license](https://github.com/ahmeticat/smart-datatable/blob/master/LICENSE.txt).
 
 ### Contributing
 
