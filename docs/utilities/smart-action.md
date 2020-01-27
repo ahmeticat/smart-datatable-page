@@ -20,7 +20,7 @@ export class SmartAction {
 
 | Property  | Explanation                          |
 |:----------|:-------------------------------------|
-| `type`    | ActionType   |
+| `type`    | [ActionType]({{ site.baseurl }}{% link docs/types/action-type.md %})   |
 | `content`      | html content of action                  |
 | `visible`      | visibility of action              |
 | `click`      |  emittable click event when action click               |

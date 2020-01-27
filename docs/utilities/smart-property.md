@@ -30,7 +30,7 @@ export class SmartProperty {
 | `inlineSearch`      |  Has column inlineSearchable (**default**: _false_)               |
 | `visible`      | Is visible column (**default**:_true_)                |
 | `width`      | Width of column              |
-| `type`      | SmartDataTypes (**default**:_Text_)              |
+| `type`      | [SmartDataTypes]({{ site.baseurl }}{% link docs/types/data-type.md %}) (**default**:_Text_)              |
 
 ---
 

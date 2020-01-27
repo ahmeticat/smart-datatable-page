@@ -23,7 +23,7 @@ export class SmartButton {
 
 | Property  | Explanation                          |
 |:----------|:-------------------------------------|
-| `type`    | ButtonType  |
+| `type`    | [ButtonType]({{ site.baseurl }}{% link docs/types/button-type.md %})  |
 | `content`      | html content of button                  |
 | `visible`      | visibility of button              |
 | `htmlClass`      | html class of button              |
