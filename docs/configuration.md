@@ -21,7 +21,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 ### Properties
 
-Smart Model has a property which is properties implemented from SmartProperty
+Smart Model has a property which is properties implemented from [SmartProperty]({{ site.baseurl }}{% link docs/utilities/smart-property.md %})
 
 ```javascript
 properties: SmartProperty[]
@@ -29,7 +29,7 @@ properties: SmartProperty[]
 
 ### Actions
 
-Smart Model has a property which is actions implemented from SmartAction
+Smart Model has a property which is actions implemented from [SmartAction]({{ site.baseurl }}{% link docs/utilities/smart-action.md %})
 
 ```javascript
 actions: SmartAction[]
@@ -37,7 +37,7 @@ actions: SmartAction[]
 
 ### Buttons
 
-Smart Model has a property which is buttons implemented from SmartButton
+Smart Model has a property which is buttons implemented from [SmartButton]({{ site.baseurl }}{% link docs/utilities/smart-button.md %})
 
 ```javascript
 buttons: SmartButton[]
@@ -45,7 +45,7 @@ buttons: SmartButton[]
 
 ### Language
 
-Smart Model has a property which is language implemented from SmartLanguage
+Smart Model has a property which is language implemented from [SmartLanguage]({{ site.baseurl }}{% link docs/utilities/smart-language.md %})
 
 ```javascript
 language: SmartLanguage[]
