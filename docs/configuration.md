@@ -10,12 +10,6 @@ nav_order: 2
 **Ng Smart Datatable** has some specific configuration parameters that can be defined in model is implemented from SmartModel.
 {: .fs-6 .fw-300 }
 
-### Table of contents
-
-1. [Properties](#properties)
-2. [Actions](#actions)
-3. [Buttons](#buttons)
-4. [Language](#language)
 
 ```javascript
   export class SmartModel {
