@@ -25,6 +25,7 @@ Smart datatable is an library for [Angular](https://angular.io). View the [quick
 ### Quick start
 
 1. A recommended way to install **ng-smart-datatable** is through npm package manager using the following command:
+
 ```bash
  npm i ng-smart-datatable --save
 ```
@@ -32,10 +33,11 @@ Smart datatable is an library for [Angular](https://angular.io). View the [quick
 ### Usage
 
 1. Import NgSmartDatatableModule in your module
+
 ```javascript
 import { NgSmartDatatableModule } from 'ng-smart-datatable';
-```
-```javascript
+
+
 @NgModule({
   declarations: [
     ...
@@ -47,12 +49,16 @@ import { NgSmartDatatableModule } from 'ng-smart-datatable';
 })
 export class YourModule { }
 ```
+
 2. Use **ng-smart-datatable** in your component
+
 ```html
 <ng-smart-datatable [data]="data" [model]="model">
 </ng-smart-datatable>
 ```
+
 3. _Example:_ Initialize data
+
 ```bash
 data = [
     {
@@ -92,7 +98,9 @@ data = [
     }
 ];
 ```
+
 and model
+
 ```javascript
 model: SmartModel = {
     properties: [
@@ -114,12 +122,6 @@ model: SmartModel = {
     ]
 };
 ```
-
-### Configure Just the Docs
-
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
-
----
 
 ## About the project
 
@@ -143,9 +145,3 @@ email, or any other method with the owners of this repository before making a ch
   </li>
 {% endfor %}
 </ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
