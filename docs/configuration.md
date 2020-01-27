@@ -22,7 +22,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 ## Properties
 
-Smart Model has a property which is properties implemented from [SmartProperty]({{ site.baseurl }}{% link docs/utilities/smart-property.md %})
+Smart Model has a property which is properties implemented from SmartProperty
 
 ```javascript
 properties: SmartProperty[]
